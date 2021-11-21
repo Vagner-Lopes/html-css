@@ -1,0 +1,162 @@
+:root {
+    --azul: blue;
+    --vermelho: red;
+}
+
+.div_um {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+}
+.div1 {
+    padding: 0;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 6px solid lightgray;
+    border-top: 6px solid rgb(38, 183, 216);
+    border-radius: 50%;
+    
+}
+/*============================================*/
+.a {
+    animation: c-loaderR 1s ease-in-out infinite;
+}
+@keyframes c-loaderR{
+    to {
+        transform: rotate(1turn);
+    }
+    from {
+        transform: rotate(0turn);
+    }
+}
+
+.b {
+    animation: c-loaderL 1s ease-in infinite;
+    border-top: 6px solid var(--vermelho);
+
+}
+@keyframes c-loaderL{
+    0% {
+        transform: rotate(1turn);
+    }
+    100% {
+        transform: rotate(0turn);
+    }
+}
+
+.c {
+    padding: 10px;
+    margin: 0px;
+    animation: c-loaderV 1s ease-in infinite;
+    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 6px solid greenyellow;
+}
+@keyframes c-loaderV{
+    0% {
+        transform: rotate(1turn);
+    }
+    50% {
+        transform: rotate(0.5turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.d {
+    animation: c-loaderD 3s cubic-bezier(1, 1, 1, 1) infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px dotted lightgray;
+    text-align: center;
+    
+}
+@keyframes c-loaderD{
+    0% {
+        transform: rotate(1turn);
+        background: var(--vermelho);
+        
+    }
+    
+    50% {
+        background: var(--azul);
+    }
+
+    100% {
+        transform: rotate(0turn);
+        background: var(--vermelho);
+        
+    }
+}
+.coracao {
+    width: 100px;
+}
+.e {
+    animation: c-loaderE 0.8s cubic-bezier(.5, 0, .5, 0) infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@keyframes c-loaderE{
+    0% {
+        transform:  scale(0.8);
+
+    }
+    
+    20% {
+        transform: scale(1.25);
+    }
+
+    40% {
+        transform: scale(0.8);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(0.8);
+
+        
+    }
+}
+.f {
+    animation: fliper 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px dotted lightgray;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    
+}
+@keyframes fliper{
+    0% {
+        transform: rotate3d(1, 1, 0, 0deg);
+        background: var(--vermelho);
+        
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 0, 180deg);
+        background: var(--azul);
+        
+    }
+}
+/*============================================*/
+/**/

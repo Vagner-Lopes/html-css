@@ -1,0 +1,191 @@
+/*Define altura do header e a borda do mesmo*/
+.blog-header {
+  line-height: 3;
+  border-bottom: 1px solid #767373;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+/*retira a linha do link Título*/
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+/*referente ao icone de busca do fontAwesome*/
+.fa-search {
+  margin-right: 10px;
+}
+
+.texto_titulo {
+  animation: nome_da_animacao 2s;
+  /*animation-iteration-count: inherit; configura tempo e quando aparecer*/
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);/*controla a velocidade*/
+}
+
+@keyframes nome_da_animacao {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  45% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(.8);
+  }
+}
+
+.texto_baixo {
+  animation: exemplo2 1s;
+  background: #e5e5e5;
+  color: blueviolet;
+  font-weight: 500;
+}
+
+@keyframes exemplo2 {
+  from {
+    border-radius: 0;
+    opacity: 0;
+  }
+  50% {
+    border-radius: 50% 0 50% 0;
+    background: #7463e6;
+  }
+  100% {
+    background: white;
+    transform: rotate(1turn);
+  }
+}
+/* video yt dpw*/
+.imagem_fundo1 {
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+.janela-display {
+  display: flex;
+  background: darkmagenta;
+}
+.imagem_fundo1 {
+  align-items: center;
+  justify-content: center;
+}
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/*
+ * Nome do blog e descrição
+ */
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Paginação */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Posts do blog
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}

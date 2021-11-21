@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /*grid-template-columns: 10px 10px 10px;
+    greensock.com
+    grid-template-rows: 10px 10px 10px;*/
+
+    gap: 5px;
+
+}
+.container > div {
+    background: #715;
+    border: white solid 1px;
+
+    width: 50%;
+    height: 50%;
+
+   
+}
+.center {
+    justify-self: end;
+    align-self: end;
+}
